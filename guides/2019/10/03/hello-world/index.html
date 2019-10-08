@@ -128,17 +128,81 @@
   </div>
 
 </header><div class="col-lg-12">
-      <div class="card">
-  <div class="col-md-8 offset-md-2 offset-md-right">
-    <h5> Posts by Category : Guides </h5>
-<div class="card">
+      <!-- Blog Post Breadcrumbs --><nav aria-label="breadcrumb" role="navigation">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="/blog">Blog</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a href="/blog/categories">Categories</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Hello World</li>
+  </ol>
+</nav><div class="row">
 
- <li class="category-posts"><span>03 Oct 2019</span> &nbsp; <a href="/guides/2019/10/03/hello-world/">Hello World</a></li>
-
-</div>
+  <div class="col-lg-8"><article class="card" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="card-header">
+    <!-- <h1 class="post-title" itemprop="name headline">Hello World</h1> -->
+    <h4 class="post-meta">Getting started with the Astartup and IMUL.</h4>
+    <p class="post-summary">Posted by : 
+      <img src="/assets/img/astartup.logo.png" class="author-profile-img">
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Cale McCollough</span>
+      </span> at
+      <time datetime="2019-10-03 10:00:00 -0700" itemprop="datePublished">Oct 3, 2019</time>
+    </p>
+    <span class="disqus-comment-count" data-disqus-identifier="/guides/2019/10/03/hello-world/"></span>
+    <div class="post-categories">
+      
+      Category : 
+      <a href="/blog/categories/guides">guides</a>
+       
+    </div>
+  </div>
+  <div class="card-body" itemprop="articleBody">
+    <img class="card-img-top" src="/assets/img/posts/post.hello_world.thumbnail.png" alt="">
+    <br /> <br />
+    <p>This says foo. Astartup is cool. Hu ha ha ha… I like nachos.</p>
 
   </div>
+  <div id="disqus_thread"></div>
+</article><script>
+  var disqus_config = function () {
+    this.page.url = "http://localhost:4000/guides/2019/10/03/hello-world/"; /* Replace PAGE_URL with your page's canonical URL variable */
+    this.page.identifier = "/guides/2019/10/03/hello-world"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+  };
+  (function () {
+    /* DON'T EDIT BELOW THIS LINE */
+    var d = document,
+      s = d.createElement('script');
+    s.src = 'https://.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript></div><div class="col-lg-4">
+  <div class="card">
+    <div class="card-header"> About </div>
+    <div class="card-body text-dark">
+      <!-- Your Bio -->
+      <p> Astartup™ is powered by I am You Language™ (IMUL™), creativity, and the power of the pen!</p><!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/a-startup/astartup.cookbook" data-size="large" data-show-count="true"
+  aria-label="Star a-startup/astartup.cookbook on GitHub">Star</a></div>
+  </div>
+  <div class="card">
+    <div class="card-header">Categories </div>
+    <div class="card-body text-dark"> 
+<div id="#guides"></div>
+<li class="tag-head">
+  <a href="/blog/categories/guides">guides</a>
+</li>
+<a name="guides"></a>
+
 </div>
+  </div>
+</div></div> <!-- End of row-->
     </div><footer>
   <p> Copyright 2015-9 © Kabuki Starship™; all rights reserved.</p>
 </footer>

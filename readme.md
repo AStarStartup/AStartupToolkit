@@ -1,6 +1,6 @@
-#Astartup™ App
+# [Astartup™](astartup.net) [Website](https://github.com/cale-mccollough/astartup.website)
 
-This repository contains the [Astartup™](https://Astartup™.net) app for PC and mobile.
+This repository contains the [Astartup™](https://astartup.net) website.
 
 ## License
 

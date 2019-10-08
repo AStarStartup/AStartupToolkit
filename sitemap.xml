@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/guides/2019/05/20/build-a-blog-using-devlopr-jekyll/</loc>
-<lastmod>2019-05-20T02:05:23-07:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/guides/2019/05/21/deploy-blog-using-devlopr-jekyll-and-github-pages/</loc>
-<lastmod>2019-05-21T02:05:23-07:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/guides/2019/05/22/using-siteleaf/</loc>
-<lastmod>2019-05-22T02:05:23-07:00</lastmod>
+<loc>http://localhost:4000/guides/2019/10/03/hello-world/</loc>
+<lastmod>2019-10-03T10:00:00-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/404/</loc>
@@ -25,19 +17,25 @@
 <loc>http://localhost:4000/blog/categories/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/careers</loc>
+</url>
+<url>
 <loc>http://localhost:4000/contact</loc>
 </url>
 <url>
 <loc>http://localhost:4000/blog/categories/guides</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/blog/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/blog/tags/jekyll</loc>
+</url>
+<url>
+<loc>http://localhost:4000/live/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/shop/</loc>

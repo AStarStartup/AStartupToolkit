@@ -72,8 +72,7 @@ pre, code { overflow: auto; white-space: pre-wrap; word-wrap: break-word; word-b
   #mce-EMAIL_footer { width: 200px; padding: 14px; color: #111; border-color: #fff; text-align: center; text-transform: capitalize; border: 1px solid #fff; }
   #mc-embedded-subscribe_footer { margin-top: 30px; }
   #author_details { text-align: center; } }
-/*  ##Device = Low Resolution Tablets, Mobiles (Landscape) ##Screen = B/w 481px to 767px
-*/
+/*  ##Device = Low Resolution Tablets, Mobiles (Landscape) ##Screen = B/w 481px to 767px */
 @media (min-width: 481px) and (max-width: 767px) { #mc-embedded-subscribe-form { width: 100%; padding: 50px; }
   #mc_embed_signup_scroll_footer { margin-left: 5%; margin-right: 5%; text-align: center; font-size: 20px; }
   #mce-EMAIL_footer { width: 300px; padding: 14px; color: #111; border-color: #fff; text-align: center; text-transform: capitalize; border: 1px solid #fff; }
@@ -94,13 +93,12 @@ pre, code { overflow: auto; white-space: pre-wrap; word-wrap: break-word; word-b
   #mc_embed_signup_scroll_footer { margin-left: 25%; margin-right: 25%; text-align: center; font-size: 22px; }
   #mce-EMAIL_footer { width: 400px; padding: 14px; color: #111; border-color: #fff; text-align: center; text-transform: capitalize; border: 1px solid #fff; }
   #mc-embedded-subscribe_footer { margin-top: 30px; } }
-/*  ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px
-*/
+/*  ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px */
 @media (min-width: 1025px) and (max-width: 1280px) { #mc-embedded-subscribe-form { width: 100%; padding: 50px; }
   #mc_embed_signup_scroll_footer { margin-left: 25%; margin-right: 25%; text-align: center; font-size: 22px; }
   #mce-EMAIL_footer { width: 400px; padding: 14px; color: #111; border-color: #fff; text-align: center; text-transform: capitalize; border: 1px solid #fff; }
   #mc-embedded-subscribe_footer { margin-top: 30px; } }
- /*  ##Device = Desktops ##Screen = 1281px to higher resolution desktops
+/*  ##Device = Desktops ##Screen = 1281px to higher resolution desktops
 */
 @media (min-width: 1281px) { #mc-embedded-subscribe-form { width: 100%; padding: 50px; }
   #mc_embed_signup_scroll_footer { margin-left: 25%; margin-right: 25%; text-align: center; font-size: 22px; }
