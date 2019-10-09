@@ -1,0 +1,264 @@
+:root {
+  --theme-bg-light: white;
+  --theme-card-bg: white;
+  --theme-tab-active-bg: lightslategray;
+  --theme-tab-inactive-bg: aliceblue;
+  --theme-tab-active-text: black;
+  --theme-tab-inactive-text: grey;
+  --theme-tab-active-link: black;
+  --theme-tab-inactive-link: grey;
+  --theme-drop-down-arrow: black;
+  --theme-drop-down-arrow-shadow: grey;
+}
+
+body {
+  background-color: white;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.org {
+  padding: 16px;
+  display: inline-block;
+}
+
+.org-logo {
+  float: left;
+  margin-top: 0;
+  padding-right: 16px;
+}
+.org-selector-and-mission {
+  display: inline-block;
+}
+
+.org-selector {
+  display: inline-block;
+}
+
+.org-mission {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.org-widget {
+  background-color:lightgray;
+  font-size: 0.9em;
+  display: block;
+  text-align: left;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#tab-active {
+  color: var(--theme-tab-active-bg);
+}
+
+#tab-text {
+  color: var(--theme-tab-active-text)
+}
+
+#tab-active-link {
+  color: var(--theme-tab-active-link)
+}
+
+#tab-inactive-link {
+  color: var(--theme-tab-inactive-link)
+}
+
+#tab-inactive {
+  color: var(--theme-tab-inactive-bg);
+}
+
+.repo {
+  background-color: var(--theme-card-bg);
+}
+
+.repo-tab {
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+  background-color: var(--theme-tab-active-bg);
+}
+
+.repo-info {
+  background-color: var(--theme-card-bg);
+}
+
+#tab-widget {
+  width: 300px;
+  margin: 80px auto;
+}
+
+aside {
+  display: block;
+  position: relative;
+  margin: 40px 0;
+}
+
+aside h3 {
+  font: bold 12px Sans-Serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #369;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  line-height: 24px;
+}
+
+/* Class name via Modernizr */
+.csstransforms aside {
+  border-left: 34px solid #369;
+  padding-left: 10px;
+}
+
+.csstransforms aside h3 {
+  /* Abs positioning makes it not take up vert space */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Border is the new background */
+  background: none;
+
+  /* Rotate from top left corner (not default) */
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+#drop-down-arrow {
+  color: var(--theme-drop-down-arrow);
+  text-shadow: 1px 1px 1px var(--theme-drop-down-arrow-shadow);
+  font-size: 0.5em;
+}
+
+#repo-toolbar-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#repo-toolbar-li {
+  float: left;
+}
+
+#repo-toolbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#repo-toolbar-a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#repo-toolbar-a-hover {
+  background-color: orange;
+}
+
+#repo-toolbar-arrow-left {
+  display: inline;
+}
+
+#repo-toolbar-arrow-right {
+  display: inline;
+}
+
+select.organizations {
+  font-size: 1em;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+textarea {
+  font-size: 0.9em;
+  vertical-align: top;
+  background: transparent;
+  resize: none;
+  border: 0 none;
+  width: 100%;
+  outline: none;
+  height: 100%;
+  position: absolute;
+}
+
+.org-description {
+  resize: none;
+  overflow: hidden;
+  font-size: 18px;
+  height: 1.1em;
+  padding: 2px;
+}
+
+.input-form {
+  display: block;
+}
+
+.org-textarea {
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.astartup-bot {
+  float: left;
+  display: block;
+}
+
+.astartup-bot-search {
+  width: 100%;
+  display: inline-block;
+}
+
+.astartup-bot-search-box {
+  width: 90%;
+  padding-right: 1em;
+  padding-left: 0.5em;
+  float: left;
+}
+
+.astartup-search-box-button {
+  width: 10%;
+  padding-left: 0.5em;
+  padding-right: 1em;
+  float: right;
+}
+
+.shopping-cart {
+  float: right;
+}
+
+h1#workspace {
+  font-size: 2em;
+}
+
+org-mission p {
+  font-size: 0.8em;
+}
+
+.login-qr-code {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#os-icon {
+  padding: 12px;
+}
