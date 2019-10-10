@@ -86,21 +86,27 @@
           <a href="/">
             <img src="/theme/logo.png" class="org-logo">
           </a>
-          <div style="display: inline-block;">
-            <div class="org-selector-and-mission">
-              <div class="org-selector">
-                <h1 id="workspace">
-                  <select class="organizations" name="selected-org">
-                    <option value="1">Astartup</option>
-                  </select>
-                </h1>
-              </div>
-              <div class="org-mission">
-                <p style="font-size:0.9em">The A* Startup network and Astartup Live-stream and app.</p>
-              </div>
+          <div class="org-selector-and-macro-editor">
+            <div class="org-selector">
             </div>
-            <div class="org-headline">
-              <textarea>Log in to view your organization's headline.</textarea>
+            <div class="repo-stream-nav">
+              <ul>
+                <li>
+                  <h1 id="workspace">
+                    <select class="org-selections" name="selected-org">
+                      <option value="1">Astartup</option>
+                    </select>
+                  </h1>
+                </li>
+                <li><a href="https://github.com/a-startup/livestream"><i class="fab fa-github"></i></a></li>
+                <li><a href="">Description</a></li>
+                <li><a href="">Mission and Vision</a></li>
+                <li><a href="">Status</a></li>
+              </ul>
+            </div>
+            <div class="org-macro-editor" style="background-color:lightsalmon;">
+              <textarea
+                name="org-macro-editor-textarea">The vision of the A* Startup network and Astartup Live-stream and app is to make it easier to create products with I am You Language (IMUL). Our vision is to .</textarea>
             </div>
           </div>
         </div>
@@ -154,31 +160,44 @@
 </header><div class="col-lg-12">
       <div class="row">
   <div class="col-lg-8">
-    <div class="card"><div class="repo">
-    <div id="page-wrap">
-        <h3>Repo</h3>
-        <div class="row">
-          <div class="col-md-2">
-            <img src="/p/astartup.png" class="company-logo" />
-          </div>
-          <div class="col-md-6">
-            <h4 class="experience-title">Astartup Live-stream <a class="org-link" href=""><i class="fa fa-angle-down" id="drop-down-arrow"></i></a></h4>
-            <h6 class="experience-info">An entrepreneur, inventor, hacker, and maker live-stream.</h6>
-          </div>
-        </div>
-      </aside>
-      <marquee id="repo-headline" scrollamount="0">Repo headline.</marquee>
-    </div>
-    <div class="repo-toolbar">
-       <ul id="repo-toolbar-ul">
-          <li id="repo-toolbar-li"><a href="" id="repo-toolbar-a"><i class="fa fa-angle-left" id="drop-down-arrow"></i></a></li>
-          <li id="repo-toolbar-li"><a href="">Stream</a></li>
-          <li id="repo-toolbar-li"><a href="">Projects</a></li>
-          <li id="repo-toolbar-li"><a href="">Issues</a></li>
-          <li id="repo-toolbar-li"><a href="">Chat</a></li>
-          <li id="repo-toolbar-li"><a href=""><i class="fa fa-angle-right" id="drop-down-arrow"></i></a></li>
-       </ul>
-    </div>
+    <div class="card"><div class="repo-streams">
+  <img src="/p/astartup.livestream.logo.png" class="repo-logo" />
+  <div class="repo-toolbar">
+    <ul>
+      <li>
+        <h3>
+          <select class="repo-sections" name="selected-repo">
+            <option value="1">Live-stream</option>
+          </select>
+        </h3>
+      </li>
+      <li><a href="https://github.com/a-startup/livestream"><i class="fab fa-github"></i></a></li>
+      <li><a href="">Description</a></li>
+      <li><a href="">Mission and Vision</a></li>
+      <li><a href="">Status</a></li>
+    </ul>
+  </div>
+  <div class="repo-headline" name="repo_headline">
+    <textarea style="margin-bottom:1em;">An entrepreneur, inventor, hacker, and maker live-stream.</textarea>
+  </div>
+</div></div>
+    <div class="card"><div class="repo-stream">
+  <div class="repo-stream-nav">
+    <ul>
+      <li><a href="">Discovery</a></li>
+      <li><a href="">Development</a></li>
+      <li><a href="">Community</a></li>
+      <li><a href="">Funding</a></li>
+    </ul>
+  </div>
+  <p>Hello, world! Welcome to the Astartup Live-stream. There is a super cool app I am You Language (IMUL) scanner,
+    productivity, learning, and creativity app in the works that I will release soon. We have a really cool channel
+    lined up with lots of educational videos for startups, engineers, inventors, game developers, designers, students,
+    and just about anyone who can write and use a computer.</p>
+  <div style="text-align: center"><iframe width="560" height="315" src="https://www.youtube.com/embed/zSd55HccdPo"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
 </div></div>
   </div>
   <div class="col-lg-4"><div class="card"><div class="qr-login">
@@ -188,10 +207,22 @@
       <a href="/"><img id="os-icon" src="/theme/app-icon-android.png" /></a>
       <a href="/"><img id="os-icon" src="/theme/app-icon-ios.png" /></a>
       <a href="/"><img id="os-icon" src="/theme/app-icon-windows.png" /></a>
-      <p>Download the Astartup app to start I am You Language and the power of the pen!</p>
+      <p>Download the Astartup app to start using I am You Language and the power of the pen!</p>
   </div>
 </div></div>
-<div class="card"><!-- Place this tag where you want the button to render. -->
+<div class="card">
+  <div class="repo-stream-nav">
+    <ul>
+      <li><a href="">Tools</a></li>
+      <li><a href="">Content</a></li>
+      <li><a href="">Community</a></li>
+    </ul>
+  </div>
+  <p>An open-source book about how to combat global warming with DIY Oregon-Coolers.</p>
+  <div>
+    <a href="https://oregoncooler.org">Visit website</a>
+    <a href="https://github.com/oregon-cooler">Visit GitHub</a>
+  </div><!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/a-startup" data-size="large" data-show-count="true"
   aria-label="Follow @a-startup on GitHub">Follow @a-startup</a><a href="https://twitter.com/astarstartup?ref_src=twsrc%5Etfw" class="twitter-follow-button"
   data-size="large" data-show-count="true">Follow @astarstartup</a>

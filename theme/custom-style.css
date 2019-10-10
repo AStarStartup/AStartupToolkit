@@ -9,6 +9,10 @@
   --theme-tab-inactive-link: grey;
   --theme-drop-down-arrow: black;
   --theme-drop-down-arrow-shadow: grey;
+  --theme-nav-bg: transparent;
+  --theme-nav-bg-active: lightgoldenrodyellow;
+  --theme-nav-bg-hover: yellow;
+  --theme-nav-link-color: black;
 }
 
 body {
@@ -29,12 +33,13 @@ body {
   margin-top: 0;
   padding-right: 16px;
 }
-.org-selector-and-mission {
-  display: inline-block;
+
+.org-selector-and-macro-editor {
+  float: left;
 }
 
 .org-selector {
-  display: inline-block;
+  float: left;
 }
 
 .org-mission {
@@ -44,7 +49,7 @@ body {
 }
 
 .org-widget {
-  background-color:lightgray;
+  background-color: lightgray;
   font-size: 0.9em;
   display: block;
   text-align: left;
@@ -57,6 +62,42 @@ body {
   margin-right: auto;
   overflow: hidden;
   position: relative;
+}
+
+org-mission p {
+  font-size: 0.8em;
+}
+
+.org-description {
+  resize: none;
+  overflow: hidden;
+  font-size: 18px;
+  height: 1.1em;
+  padding: 2px;
+}
+
+select.org-selections {
+  font-size: 1em;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+textarea {
+  font-size: 0.9em;
+  vertical-align: top;
+  background: transparent;
+  resize: none;
+  border: 0 none;
+  width: 600px;
+  outline: none;
+  height: 100%;
+  position: absolute;
+}
+
+.transparent-textarea {
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
 }
 
 #tab-active {
@@ -79,8 +120,103 @@ body {
   color: var(--theme-tab-inactive-bg);
 }
 
-.repo {
-  background-color: var(--theme-card-bg);
+.astartup-bot {
+  float: left;
+  display: block;
+}
+
+.astartup-bot-search {
+  width: 100%;
+  display: inline-block;
+}
+
+.astartup-bot-search-box {
+  width: 90%;
+  padding-right: 1em;
+  padding-left: 0.5em;
+  float: left;
+}
+
+.astartup-search-box-button {
+  width: 10%;
+  padding-left: 0.5em;
+  padding-right: 1em;
+  float: right;
+}
+
+.shopping-cart {
+  float: right;
+}
+
+h1#workspace {
+  font-size: 2em;
+}
+
+.repo-toolbar {
+  height: 3em;
+  margin-bottom: 1em;
+  display: inline-block;
+  background-color: var(--theme-nav-bg);
+}
+
+.repo-toolbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.repo-toolbar li {
+  float: left;
+  vertical-align: middle;
+}
+
+.repo-toolbar li a {
+  display: block;
+  color: var(--theme-tab-link-color);
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.repo-toolbar li a:hover:not(.active) {
+  background-color: var(--theme-nav-bg-hover);
+}
+
+.repo-stream p {
+  text-indent: 1em;
+  text-indent: 1em each-line;
+  text-indent: 1em hanging;
+  text-indent: 1em hanging each-line;
+}
+
+.repo-stream-nav {
+  height: 3em;
+  background-color: var(--theme-nav-bg);
+  margin-bottom: 1em;
+}
+
+.repo-stream-nav ul {
+  list-style-type: none;
+  height: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.repo-stream-nav li {
+  float: left;
+  vertical-align: middle;
+}
+
+.repo-stream-nav li a {
+  display: block;
+  color: var(--theme-tab-link-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.repo-logo {
+  float: left;
+  padding-right: 16px;
 }
 
 .repo-tab {
@@ -91,6 +227,45 @@ body {
 
 .repo-info {
   background-color: var(--theme-card-bg);
+}
+
+.repo-headline {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1em;
+}
+
+.repo-toolbar {
+  margin: 0;
+  padding: 16, 0, 16, 0;
+  background-color: theme-nav-bg;
+}
+
+.epo-toolbar ul {
+  list-style-type: none;
+  display: inline-block;
+  height: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.repo-toolbar li a {
+  display: block;
+  color: var(--theme-tab-link-color);
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.repo-toolbar ul li a:hover:not(.active) {
+  background-color: var(--theme-nav-bg-hover);
+}
+
+.repo-toolbar-arrow-left {
+  display: inline;
+}
+
+.repo-toolbar-arrow-right {
+  display: inline;
 }
 
 #tab-widget {
@@ -141,116 +316,18 @@ aside h3 {
   font-size: 0.5em;
 }
 
-#repo-toolbar-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-#repo-toolbar-li {
-  float: left;
-}
-
-#repo-toolbar a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#repo-toolbar-a:hover:not(.active) {
-  background-color: #111;
+select.repo-sections {
+  font-size: 1em;
+  border: 1px solid #fff;
+  background-color: transparent;
 }
 
 .active {
   background-color: #4CAF50;
 }
 
-#repo-toolbar-a-hover {
-  background-color: orange;
-}
-
-#repo-toolbar-arrow-left {
-  display: inline;
-}
-
-#repo-toolbar-arrow-right {
-  display: inline;
-}
-
-select.organizations {
-  font-size: 1em;
-  border: 1px solid #fff;
-  background-color: transparent;
-}
-
-textarea {
-  font-size: 0.9em;
-  vertical-align: top;
-  background: transparent;
-  resize: none;
-  border: 0 none;
-  width: 100%;
-  outline: none;
-  height: 100%;
-  position: absolute;
-}
-
-.org-description {
-  resize: none;
-  overflow: hidden;
-  font-size: 18px;
-  height: 1.1em;
-  padding: 2px;
-}
-
 .input-form {
   display: block;
-}
-
-.org-textarea {
-  font-size: 2em;
-  width: 100%;
-  height: 100%;
-}
-
-.astartup-bot {
-  float: left;
-  display: block;
-}
-
-.astartup-bot-search {
-  width: 100%;
-  display: inline-block;
-}
-
-.astartup-bot-search-box {
-  width: 90%;
-  padding-right: 1em;
-  padding-left: 0.5em;
-  float: left;
-}
-
-.astartup-search-box-button {
-  width: 10%;
-  padding-left: 0.5em;
-  padding-right: 1em;
-  float: right;
-}
-
-.shopping-cart {
-  float: right;
-}
-
-h1#workspace {
-  font-size: 2em;
-}
-
-org-mission p {
-  font-size: 0.8em;
 }
 
 .login-qr-code {
