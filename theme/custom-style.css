@@ -10,9 +10,10 @@
   --theme-drop-down-arrow: black;
   --theme-drop-down-arrow-shadow: grey;
   --theme-nav-bg: transparent;
-  --theme-nav-bg-active: lightgoldenrodyellow;
-  --theme-nav-bg-hover: yellow;
+  --theme-nav-bg-active: lightslategray;
+  --theme-nav-a-hover: black;
   --theme-nav-link-color: black;
+  --theme-astartup-bot-a-hover-color: lightslategray;
 }
 
 body {
@@ -25,17 +26,28 @@ body {
 
 .org {
   padding: 16px;
+  margin-top: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.org h1 {
+  font-size: 2em;
   display: inline-block;
 }
 
 .org-logo {
   float: left;
   margin-top: 0;
-  padding-right: 16px;
+  padding: 0, 16px, 16px, 0;
 }
 
 .org-selector-and-macro-editor {
   float: left;
+}
+
+.org-macro-editor {
+  width: 100%;
 }
 
 .org-selector {
@@ -88,14 +100,7 @@ textarea {
   background: transparent;
   resize: none;
   border: 0 none;
-  width: 600px;
   outline: none;
-  height: 100%;
-  position: absolute;
-}
-
-.transparent-textarea {
-  font-size: 2em;
   width: 100%;
   height: 100%;
 }
@@ -121,13 +126,54 @@ textarea {
 }
 
 .astartup-bot {
-  float: left;
+  width: 100%;
+  padding: 0 2em 0 2em;
+}
+
+.astartup-bot ul {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.astartup-bot li {
+  width: 25%;
+}
+
+.astartup-bot li a {
   display: block;
+  text-align: center;
+  margin: 0;
+}
+
+/*
+.astartup-bot li:first-child a {
+  border-left: 1px solid #ccc;
+}*/
+
+.astartup-bot li a:hover {
+  font-weight: bold;
+  color: var(--theme-astartup-bot-a-hover-color);
 }
 
 .astartup-bot-search {
   width: 100%;
-  display: inline-block;
+  position: relative;
+}
+
+.astartup-bot-search input {
+  width: 100%;
+  text-indent: 30px;
+}
+
+.astartup-bot-search .fa-search {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 24px;
+  left: 7px;
 }
 
 .astartup-bot-search-box {
@@ -148,37 +194,38 @@ textarea {
   float: right;
 }
 
-h1#workspace {
-  font-size: 2em;
-}
-
-.repo-toolbar {
+.widget-toolbar {
   height: 3em;
   margin-bottom: 1em;
-  display: inline-block;
+  width: 100%;
   background-color: var(--theme-nav-bg);
 }
 
-.repo-toolbar ul {
+.widget-toolbar ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.repo-toolbar li {
+.widget-toolbar li {
   float: left;
   vertical-align: middle;
 }
 
-.repo-toolbar li a {
+.widget-toolbar li a {
   display: block;
   color: var(--theme-tab-link-color);
   padding: 16px 16px;
   text-decoration: none;
 }
 
-.repo-toolbar li a:hover:not(.active) {
-  background-color: var(--theme-nav-bg-hover);
+.widget-toolbar li a:hover {
+  font-weight: bold;
+  color: var(--theme-nav-a-hover-color);
+}
+
+.widget-toolbar li a:hover:not(.active) {
+  font-weight: bold;
 }
 
 .repo-stream p {
@@ -188,31 +235,43 @@ h1#workspace {
   text-indent: 1em hanging each-line;
 }
 
-.repo-stream-nav {
+.oversight-nav {
   height: 3em;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
   background-color: var(--theme-nav-bg);
-  margin-bottom: 1em;
 }
 
-.repo-stream-nav ul {
+.oversight-nav ul {
   list-style-type: none;
   height: 3em;
   padding: 0;
   margin: 0;
 }
 
-.repo-stream-nav li {
+.oversight-nav li {
   float: left;
   vertical-align: middle;
 }
 
-.repo-stream-nav li a {
+.oversight-nav li a {
   display: block;
   color: var(--theme-tab-link-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
+
+.oversight-nav li a:hover {
+  font-weight: bold;
+  color: var(--theme-nav-a-hover-color);
+}
+
+/*
+.oversight-nav li a:hover:not(.active) {
+  font-weight: bold;
+}*/
 
 .repo-logo {
   float: left;
@@ -235,37 +294,26 @@ h1#workspace {
   margin-bottom: 1em;
 }
 
-.repo-toolbar {
+.widget-toolbar {
   margin: 0;
-  padding: 16, 0, 16, 0;
-  background-color: theme-nav-bg;
+  padding: 1em 0, 1em 0;
+  background-color: var(--theme-nav-bg);
 }
 
-.epo-toolbar ul {
+.widget-toolbar ul {
   list-style-type: none;
   display: inline-block;
   height: 3em;
   padding: 0;
   margin: 0;
+  width: 205;
 }
 
-.repo-toolbar li a {
+.widget-toolbar li a {
   display: block;
   color: var(--theme-tab-link-color);
   padding: 16px 16px;
   text-decoration: none;
-}
-
-.repo-toolbar ul li a:hover:not(.active) {
-  background-color: var(--theme-nav-bg-hover);
-}
-
-.repo-toolbar-arrow-left {
-  display: inline;
-}
-
-.repo-toolbar-arrow-right {
-  display: inline;
 }
 
 #tab-widget {
@@ -308,12 +356,6 @@ aside h3 {
   /* Rotate from top left corner (not default) */
   transform-origin: 0 0;
   transform: rotate(90deg);
-}
-
-#drop-down-arrow {
-  color: var(--theme-drop-down-arrow);
-  text-shadow: 1px 1px 1px var(--theme-drop-down-arrow-shadow);
-  font-size: 0.5em;
 }
 
 select.repo-sections {
