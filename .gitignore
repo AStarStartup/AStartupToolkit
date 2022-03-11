@@ -35,6 +35,9 @@ bld/
 # Nested git repositories
 .git/
 
+# Nested IntelliJ repositories
+.idea/
+
 # Visual Studio cache/options directory
 .vs/
 
