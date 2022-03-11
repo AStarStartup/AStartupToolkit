@@ -1,8 +1,8 @@
-The AStartup Product Documentation Jekyll template simplifies your startup documentation with a statically-generated Jekyll website for all of your documentation.
+The AStartup Toolkit Jekyll template simplifies your startup documentation with a statically-generated Jekyll product documentation and business model canvas.
 
 ## License
 
-Copyright ©2022 [AStartup™](https://astartup.net); all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupJekyllDocs>.
+Copyright ©2022 [AStartup™](https://astartup.net); all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>.
 
 ### Legal Agreement
 
