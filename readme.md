@@ -18,17 +18,26 @@ rmdir /Q /S ".git"
 
 **3.** Find and replace all references of `AStartupToolkit` to `YourProject.Documentation`. You can use a different folder name but the tutorial will use `YourProject.Documentation` so you will have to keep that in mind.
 
-**4.** Find and replace all references of `/AStartup` to `/YourStartup`.
+**4.** Find and replace all references of `/AStartup` to `/YourStartup`. 
+
+**4.A** For Windows users, use the Powershell script:
 
 ```
-$configFiles = Get-ChildItem . *.config -rec
+$configFiles = Get-ChildItem . *.md, *.html -rec
 foreach ($file in $configFiles)
 {
     (Get-Content $file.PSPath) |
-    Foreach-Object { $_ -replace "/AStartup", "/YourStartup" } |
+    Foreach-Object { $_ -replace "AStarStartup/AStartupToolkit", "YourGitHubAccount/YourGitHubRepoName" } |
     Set-Content $file.PSPath
 }
-$configFiles = Get-ChildItem . *.config -rec
+$configFiles = Get-ChildItem . *.md, *.html -rec
+foreach ($file in $configFiles)
+{
+    (Get-Content $file.PSPath) |
+    Foreach-Object { $_ -replace "astartup.net", "YourGitHubAccount.github.io" } |
+    Set-Content $file.PSPath
+}
+$configFiles = Get-ChildItem . *.md, *.html -rec
 foreach ($file in $configFiles)
 {
     (Get-Content $file.PSPath) |
@@ -37,9 +46,15 @@ foreach ($file in $configFiles)
 }
 ```
 
-**5.** Find and replace all references of `AStartup` to `YourStartup`.
+**4.B** BASH users can use the following script:
 
-**6.** Delete the `Template Agreement` section.
+```
+find . -name '*.php' -exec sed -i -e 's/AStarStartup//AStartupToolkit/YourGitHubAccount//YourGitHubRepoName/g' {} \;
+find . -name '*.php' -exec sed -i -e 's/astartup.net/YourGitHubAccount.github.io/g' {} \;
+find . -name '*.php' -exec sed -i -e 's/AStartup/YourStartup/g' {} \;
+```
+
+**6.** Delete the `Template Agreement` section and replace the License if you want with your own license or one of the [Kabuki Licenses](https://github.com/KabukiStarship/KabukiLicenses).
 
 **7.** Create a new git repo on GitHub and on your computer, lets call it "YourGitHubAccount.Documentation", then upload the template to github. On gitHub create the first issue named "Session.Future" and close it out. Then create second issue titled "Add AStartup Toolkit template files" and close it out.
 
