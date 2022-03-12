@@ -1,5 +1,58 @@
 The AStartup Toolkit Jekyll template simplifies your startup documentation with a statically-generated Jekyll product documentation and business model canvas.
 
+## Quickstart
+
+**1.** Clone AStarStartup GitHub workspace.
+
+```
+cd Workspace
+git clone https://github.com/AStarStartup/AStarStartup --recursive
+```
+
+**2.** Delete the `.git` folder in the AStartupToolkit root folder, create a new git repo, and look around the repository.
+
+```
+cd AStartupToolkit
+rmdir /Q /S ".git"
+```
+
+**3.** Find and replace all references of `AStartupToolkit` to `YourProject.Documentation`. You can use a different folder name but the tutorial will use `YourProject.Documentation` so you will have to keep that in mind.
+
+**4.** Find and replace all references of `/AStartup` to `/YourStartup`.
+
+```
+$configFiles = Get-ChildItem . *.config -rec
+foreach ($file in $configFiles)
+{
+    (Get-Content $file.PSPath) |
+    Foreach-Object { $_ -replace "/AStartup", "/YourStartup" } |
+    Set-Content $file.PSPath
+}
+$configFiles = Get-ChildItem . *.config -rec
+foreach ($file in $configFiles)
+{
+    (Get-Content $file.PSPath) |
+    Foreach-Object { $_ -replace "AStartup", "YourStartup" } |
+    Set-Content $file.PSPath
+}
+```
+
+**5.** Find and replace all references of `AStartup` to `YourStartup`.
+
+**6.** Delete the `Template Agreement` section.
+
+**7.** Create a new git repo on GitHub and on your computer, lets call it "YourGitHubAccount.Documentation", then upload the template to github. On gitHub create the first issue named "Session.Future" and close it out. Then create second issue titled "Add AStartup Toolkit template files" and close it out.
+
+```
+git init
+git add .
+git commit -m "Add AStartup Toolkit template files. #2"
+git remote add origin https://github.com/YourGitHubAccount/YourGitHubAccount.Documentation.git
+git push -u origin master
+```
+
+**8.** Consult the [AStartup Cookbook](https://github.com/AStarStartup/AStartupCookbook) when you don't know what you're doing; consider making a contribution on GitHub.
+
 ## License
 
 Copyright ©2022 [AStartup™](https://astartup.net); all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>.
