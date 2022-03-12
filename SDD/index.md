@@ -1,3 +1,6 @@
+---
+layout: Document
+---
 # Software Design Document
 
 ***Content Table***

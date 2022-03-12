@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include Head.html %}
+    {% if page.datatable == true %}
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
+        $('table.display').DataTable( {
+          paging: true,
+          stateSave: true,
+          searching: true
+        });
+      });
+    </script>
+    {% endif %}
+  </head>
+  <body>
+    <div id="AStartupToolkitNavTop" style="background-color:beige">
+  {% include NavTop.html %}
+    </div>
+    <div id="AStartupToolkitDocument" style="background-color:lightcyan">
+  {{ content }}
+    </div>
+    <div id="AStartupToolkitFooter" style="background-color: magenta">
+  {% include Footer.html %}
+    </div>
+  </body>
+</html>
