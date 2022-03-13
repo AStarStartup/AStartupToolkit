@@ -1,4 +1,17 @@
-The AStartup Toolkit Jekyll template simplifies your startup documentation with a statically-generated Jekyll product documentation and business model canvas.
+The AStartup Toolkit™ Jekyll template simplifies your startup documentation with a statically-generated Jekyll product documentation and business model canvas that can work for almost any startup. Make your startup an A-Startup with the A* Startup™.
+
+## General Templates
+
+* [Business Model Canvas](./BMC/)
+
+## App Development Templates
+
+* [Requirements Analysis Document](./RAD/)
+* [SoftwareDesign Document](./SDD/)
+
+## Game Development Templates
+
+* [Requirements Analysis Document](./GDD/)
 
 ## Quickstart
 
@@ -16,7 +29,7 @@ cd AStartupToolkit
 rmdir /Q /S ".git"
 ```
 
-**3.** Find and replace all references of `AStartupToolkit` to `YourProject.Documentation`. You can use a different folder name but the tutorial will use `YourProject.Documentation` so you will have to keep that in mind.
+**3.** Find and replace all references of `AStartupToolkit` to `YourProject.Docs`. You can use a different folder name but the tutorial will use `YourProject.Docs` so you will have to keep that in mind.
 
 **4.** Find and replace all references of `/AStartup` to `/YourStartup`. 
 
@@ -56,21 +69,19 @@ find . -name '*.php' -exec sed -i -e 's/AStartup/YourStartup/g' {} \;
 
 **6.** Delete the `Template Agreement` section and replace the License if you want with your own license or one of the [Kabuki Licenses](https://github.com/KabukiStarship/KabukiLicenses).
 
-**7.** Create a new git repo on GitHub and on your computer, lets call it "YourGitHubAccount.Documentation", then upload the template to github. On gitHub create the first issue named "Session.Future" and close it out. Then create second issue titled "Add AStartup Toolkit template files" and close it out.
+**7.** Create a new git repo on GitHub and on your computer, lets call it "YourGitHubAccount.Docs", then upload the template to github. On gitHub create the first issue named "Session.Future" and close it out. Then create second issue titled "Add AStartup Toolkit template files" and close it out.
 
 ```
 git init
 git add .
 git commit -m "Add AStartup Toolkit template files. #2"
-git remote add origin https://github.com/YourGitHubAccount/YourGitHubAccount.Documentation.git
+git remote add origin https://github.com/YourGitHubAccount/YourGitHubAccount.Docs.git
 git push -u origin master
 ```
 
 **8.** Consult the [AStartup Cookbook](https://github.com/AStarStartup/AStartupCookbook) when you don't know what you're doing; consider making a contribution on GitHub.
 
-## License
-
-Copyright ©2022 [AStartup™](https://astartup.net); all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>.
+{% comment %}Copyright ©2022 [AStartup](https://astartup.net)™; all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>. {% endcomment %}
 
 ### Legal Agreement
 
