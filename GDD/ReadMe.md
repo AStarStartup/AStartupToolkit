@@ -57,4 +57,6 @@ This folder contains a Markdown template for a Game Design Document in a folder 
     3. [Network requirements](./Technical/NetworkRequirements)
 8. [Game Art](./GameArt)
 
-{% comment %}Copyright ©2022 [AStartup](https://astartup.net)™; all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>. {% endcomment %}
+## License
+
+Copyright ©2022 [AStartup](https://astartup.net)™; all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>.
