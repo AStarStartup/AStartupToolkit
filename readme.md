@@ -81,7 +81,9 @@ git push -u origin master
 
 **8.** Consult the [AStartup Cookbook](https://github.com/AStarStartup/AStartupCookbook) when you don't know what you're doing; consider making a contribution on GitHub.
 
-{% comment %}Copyright ©2022 [AStartup](https://astartup.net)™; all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>. {% endcomment %}
+## License
+
+Copyright ©2022 [AStartup](https://astartup.net)™; all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>.
 
 ### Legal Agreement
 
