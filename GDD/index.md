@@ -1,4 +1,8 @@
-# Game Design Document Template
+---
+layout: Default
+title: AStartup Game Design Document Template
+---
+# AStartup Game Design Document Template
 
 This folder contains a Markdown template for a Game Design Document in a folder hierarchy. The folder hierarchy is preferred over a single file because Markdown viewers are very glitch with large documents.
 
@@ -8,7 +12,7 @@ This folder contains a Markdown template for a Game Design Document in a folder 
     3. [Target Audience](./Overview/TargetAudience)
     4. [Game Flow Summary](./Overview/GameFlowSummary)
     5. [Look and Feel](./Overview/LookAndFeel)
-2. [Gameplay and  Mechanics](./GameplayAndMechanics)
+2. [Gameplay and Mechanics](./GameplayAndMechanics)
     1. [Gameplay](./GameplayAndMechanics/Gameplay)
         1. [Game Progression](./GameplayAndMechanics/Gameplay/GameProgression)
         2. [Mission/challenge Structure](./GameplayAndMechanics/Gameplay/MissionChallengeStructure)
@@ -53,6 +57,4 @@ This folder contains a Markdown template for a Game Design Document in a folder 
     3. [Network requirements](./Technical/NetworkRequirements)
 8. [Game Art](./GameArt)
 
-## License
-
-Copyright ©2022 [AStartup™](https://astartup.net); all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>.
+{% comment %}Copyright ©2022 [AStartup](https://astartup.net)™; all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>. {% endcomment %}

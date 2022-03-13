@@ -1,9 +1,17 @@
-# [Requirements Analysis Document](../../)
+---
+layout: Default
+title: Nonfunctional Requirements
+---
 
-## [Proposed System](../)
+The non-function requirements are broken up into the categories 
 
-### [Nonfunctional Requirements](./)
+1. [Implementation](./Implementation)
+1. [Interface](./Interface)
+1. [Legal](./Legal)
+1. [Packaging](./Packaging)
+1. [Performance](./Performance)
+1. [Reliability](./Reliability)
+1. [Supportability](./Supportability)
+1. [Usability](./Usability)
 
-## License
-
-Copyright ©2022 [AStartup™](https://astartup.net); all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>.
+{% comment %}Copyright ©2022 [AStartup](https://astartup.net)™; all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>. {% endcomment %}
