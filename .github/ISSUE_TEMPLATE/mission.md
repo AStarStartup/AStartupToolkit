@@ -3,37 +3,39 @@ name: Mission
 about: A mission with a problem-solution analysis
 title: ''
 labels: ''
-assignees: ''
-
+assignees: 'CookingWithCale'
 ---
 
-### A
+# 
 
-#### Problem
+## Problem
 
 The problem I am addressing on this mission is...
 
-#### Solution
+## Solution
 
 The solution that I'm addressing on this mission is...
 
-##### File Affected
+### File Affected
 
-1. `*.*`
+1. `?`
 
-#### Hierarchy
+## Hierarchy
 
-* #1
+* #10
 
-#### Tags
+## Tags
 
 Mission
 
-#### Sessions
+## A
 
-* #2
-* CookingWithCale/CookingWithCale#1
+
+
+### Sessions
+
+* CookingWithCale/CookingWithCale#9
 
 ## License
 
-Copyright ©2022 [AStartup](https://astartup.net)™; all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>.
+Copyright 2023 [AStartup](https://astartup.net); all rights reserved.
