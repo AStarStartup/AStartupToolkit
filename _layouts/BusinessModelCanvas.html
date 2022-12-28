@@ -1,65 +1,81 @@
----
-layout: Default
---- 
-<div class="AStartupToolkitBMC" style="background-color: lightseagreen">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }} | {{ site.site_title }}</title>
+  <link rel="stylesheet" href="{{ "/t/font-awesome.min.css" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" href="{{ "/t/bootstrap.min.css" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" href="{{ "/t/AStartupToolkitTheme.css" | prepend: site.baseurl | prepend: site.url }}" />
+</head>
+<body>
   <div class="AStartupToolkitBMCRow" style="background-color: lightslategray">
-    <div class="AStartupToolkitBMCTopColumnVSpan2" style="background-color: blue">
-      <h3>Key Partners</h3>
-      <ul class="AStartupToolkitList">
-{% include_relative KeyPartners.html %}
-      </ul>
-    </div>
-    <div class="AStartupToolkitBMCTopColumnRows2" style="background-color:green">
-      <div class="AStartupToolkitBMCTopColumnVSpan1">
-        <h3>Key Activities</h3>
+    <div class="AStartupBMCRowColumns">
+      <div class="AStartupToolkitBMCTopColumn" style="background-color: blue">
+        <h3>Key Partners</h3>
         <ul class="AStartupToolkitList">
-{% include_relative KeyActivities.html %}
+          {% include_relative KeyPartners.html %}
         </ul>
       </div>
-      <div class="AStartupToolkitBMCTopColumnVSpan1">
-        <h3>Key Resources</h3>
+      <div class="AStartupToolkitBMCTopColumn" style="background-color: blue">
+        <div class="AStartupToolkitBMCTopColumnRows2" style="background-color:green">
+          <div class="AStartupToolkitBMCTopColumnRow">
+            <h3>Key Activities</h3>
+            <ul class="AStartupToolkitList">
+              {% include_relative KeyActivities.html %}
+            </ul>
+          </div>
+          <div class="AStartupToolkitBMCTopColumnRow">
+            <h3>Key Resources</h3>
+            <ul class="AStartupToolkitList">
+              {% include_relative KeyResources.html %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="AStartupToolkitBMCTopColumn" style="background-color: lightsalmon">
+        <h3>Value Propositions:</h3>
         <ul class="AStartupToolkitList">
-{% include_relative KeyResources.html %}
+          {% include_relative ValuePropositions.html %}
+        </ul>
+      </div>
+      <div class="AStartupToolkitBMCTopColumn" style="background-color: blue">
+        <div class="AStartupToolkitBMCTopColumnRows2" style="background-color:greenyellow">
+          <div class="AStartupToolkitBMCTopColumnRow" style="background-color:crimson">
+            <h3>Customer Relationships</h3>
+            <ul class="AStartupToolkitList">
+              {% include_relative CustomerRelationships.html %}
+            </ul>
+          </div>
+          <div class="AStartupToolkitBMCTopColumnRow" style="background-color:rebeccapurple">
+            <h3>Channels:</h3>
+            <ul class="AStartupToolkitList">
+              {% include_relative Channels.html %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="AStartupToolkitBMCTopColumn" style="background-color: purple">
+        <h3>Customer Segments:</h3>
+        <ul class="AStartupToolkitList">
+          {% include_relative CustomerSegments.html %}
         </ul>
       </div>
     </div>
-    <div class="AStartupToolkitBMCTopColumnVSpan2" style="background-color: lightsalmon">
-      <h3>Value Propositions:</h3>
-      <ul class="AStartupToolkitList">
-{% include_relative ValuePropositions.html %}
-        </ul>
-    </div>
-    <div class="AStartupToolkitBMCTopColumnRows2" style="background-color:greenyellow">
-      <div class="AStartupToolkitBMCTopColumnVSpan1" style="background-color:crimson">
-        <h3>Customer Relationships</h3>
-        <ul class="AStartupToolkitList">
-{% include_relative CustomerRelationships.html %}
-        </ul>
+    <div class="AStartupBMCRow" style="background-color: lightgreen">
+      <div class="AStartupBMCRowColumns" style="background-color: lightblue">
+        <div class="AStartupBMCBottomColumn" style="background-color: aqua;">
+          <h3>Cost Structure</h3>
+          <ul class="AStartupList">
+            {% include_relative CostStructure.html %}
+          </ul>
+        </div>
+        <div class="AStartupBMCBottomColumn" style="background-color:crimson;">
+          <h3>Revenue Streams:</h3>
+          <ul class="AStartupList">
+            {% include_relative RevenueStreams.html %}
+          </ul>
+        </div>
       </div>
-      <div class="AStartupToolkitBMCTopColumnVSpan1" style="background-color:rebeccapurple">
-        <h3>Channels:</h3>
-        <ul class="AStartupToolkitList">
-{% include_relative Channels.html %}
-        </ul>
-      </div>
-    </div>
-    <div class="AStartupToolkitBMCTopColumnVSpan2" style="background-color: purple">
-      <h3>Customer Segments:</h3>
-      <ul class="AStartupToolkitList">
-{% include_relative CustomerSegments.html %}
-        </ul>
-    </div>    
-    <div class="AStartupToolkitBMCBottomHalf" style="background-color: aqua;">
-      <h3>Cost Structure</h3>
-      <ul class="AStartupToolkitList">
-{% include_relative CostStructure.html %}
-      </ul>
-    </div>
-    <div class="AStartupToolkitBMCBottomHalf" style="background-color:crimson;">
-      <h3>Revenue Streams:</h3>
-      <ul class="AStartupToolkitList">
-{% include_relative RevenueStreams.html %}
-      </ul>
     </div>
   </div>
-</div>
+</body>
+</html>

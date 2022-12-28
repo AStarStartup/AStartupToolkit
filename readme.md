@@ -1,4 +1,4 @@
-The AStartup Toolkit™ Jekyll template simplifies your startup documentation with a statically-generated Jekyll product documentation and business model canvas that can work for almost any startup. Make your startup an A-Startup with the A* Startup™.
+The AStartup Toolkit™ Jekyll template simplifies your startup documentation with a statically-generated Jekyll product documentation and business model canvas that can work for almost any startup. Make your startup an A-Startup with the A* Startup™, your shortest-possible graph to success™.
 
 ## General Templates
 
@@ -35,6 +35,8 @@ rmdir /Q /S ".git"
 
 **4.A** For Windows users, use the Powershell script:
 
+I haven't ran this script yet. Please submit fixes via the ITS.
+
 ```
 $configFiles = Get-ChildItem . *.md, *.html -rec
 foreach ($file in $configFiles)
@@ -61,21 +63,23 @@ foreach ($file in $configFiles)
 
 **4.B** BASH users can use the following script:
 
+I haven't ran this script yet. Please submit fixes via the ITS.
+
 ```
-find . -name '*.php' -exec sed -i -e 's/AStarStartup//AStartupToolkit/YourGitHubAccount//YourGitHubRepoName/g' {} \;
-find . -name '*.php' -exec sed -i -e 's/astartup.net/YourGitHubAccount.github.io/g' {} \;
-find . -name '*.php' -exec sed -i -e 's/AStartup/YourStartup/g' {} \;
+find . -name '*.md' -exec sed -i -e 's//AStarStartup//AStartupToolkit/YourGitHubAccount//YourGitHubRepoName/g' {} \;
+find . -name '*.md' -exec sed -i -e 's//astartup.net//YourGitHubAccount.github.io/g' {} \;
+find . -name '*.md' -exec sed -i -e 's///AStarStartup//YourStartup/g' {} \;
 ```
 
 **6.** Delete the `Template Agreement` section and replace the License if you want with your own license or one of the [Kabuki Licenses](https://github.com/KabukiStarship/KabukiLicenses).
 
-**7.** Create a new git repo on GitHub and on your computer, lets call it "YourGitHubAccount.Docs", then upload the template to github. On gitHub create the first issue named "Session.Future" and close it out. Then create second issue titled "Add AStartup Toolkit template files" and close it out.
+**7.** Create a new git repo on GitHub and on your computer, lets call it "_Docs_", then upload the template to github. In IMUL an underscore after a word (post-underscore) means that it is private and a pre-underscore means that the file or folder is not part of the output files. On gitHub three issue tickets, the first titled "This", the second titled "Session.Future", and the third titled "Add AStartup Toolkit template files".
 
 ```
 git init
 git add .
-git commit -m "Add AStartup Toolkit template files. #2"
-git remote add origin https://github.com/YourGitHubAccount/YourGitHubAccount.Docs.git
+git commit -m "Add AStartup Toolkit template files. #3"
+git remote add origin https://github.com/YourGitHubAccount/_Docs_.git
 git push -u origin master
 ```
 

@@ -1,24 +1,62 @@
-#AStartupToolkitNavTop {
+body, h1, h2, h3, p {
+  margin: 0;
+}
+
+h2, h3, p {
+  margin-bottom: 1em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: clamp(3rem, 1rem + 10vw, 7rem);
+}
+
+@media (min-width: 40em) {
+  .split {
+    display: flex;
+    gap: 2em;
+  }
+}
+
+#AStartup {
+  padding: 0 1em;
+  max-width: 1920px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+#AStartupToolkit {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#AStartupNavTop {
   display: block;
   width: 100%;
   padding: 0.5em;
+  position: sticky;
 }
 
-#AStartupToolkitNavTop p {
+#AStartupNavTop p {
   display: inline;
   font: 16px;
 }
 
-#AStartupToolkitNavTop ul li {
+#AStartupNavTop ul li {
   display: inline;
 }
 
-#AStartupToolkitNavSide {
+#AStartupNavSide {
   display: block;
   width: 25%;
 }
 
-#AStartupToolkitDocument {
+#AStartupDocument {
   display: block;
   padding:1em;
   border:3px;
@@ -26,87 +64,105 @@
   width:100%;
 }
 
-#AStartupToolkitFooter {
+#AStartupFooter {
   display: block;
 }
 
-#AStartupToolkitFooterCopyright {
+#AStartupFooterCopyright {
   font-size: 8pt;
   text-align: center;
 }
 
-.AStartupToolkitBMC {
+.AStartupBMC {
   display: block;
   width: 100%;
+  height: 100%;
   padding: 1em;
   border: 3px solid blue; 
 }
 
-.AStartupToolkitBMCRow {
-  display: inline;
+.AStartupBMCElement {
+  width: 256px;
+  height: 256px;
+  border: 3px solid purple; 
+}
+
+.AStartupBMCRow {
+  display: block;
   width: 100%;
-  height: 512px;
   margin: 1em;
   padding: 1em;
   border: 3px solid red; 
 }
 
-.AStartupToolkitBMCTopColumnRows2 {
-  display: block;
-  width:   17.5%;
-  height:  37.5%;
+.AStartupBMCRowColumns {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.AStartupToolkitBMCTopColumnVSpan1 {
+.AStartupBMCTopColumn {
+  display: inline;
+  width:   20%;
+  height:  75%;
+  border:  2px solid black;
+}
+
+.AStartupBMCTopColumn ul li {
+  display: block;
+}
+
+.AStartupBMCTopColumnRowPair {
+  display: block;
+  width:   20%;
+  height:  100%;
+}
+
+.AStartupBMCTopColumnRow {
   display: block;
   width:   100%;
   height:  37.5%;
   border:  2px solid black;
 }
 
-.AStartupToolkitBMCTopColumnVSpan1 ul li {
+.AStartupBMCTopColumnRow ul li {
   display: block;
 }
 
-.AStartupToolkitBMCTopColumnVSpan2 {
+.AStartupBMCBottomColumn {
   display: block;
-  width:   17.5%;
-  height:  75%;
+  width:   256px;
+  height:  256px;
   border:  2px solid black;
 }
 
-.AStartupToolkitBMCTopColumnVSpan2 ul li {
+.AStartupBMCBottomColumn ul li {
   display: block;
 }
 
-.AStartupToolkitBMCBottomColumn {
-  display:  block;
-  width:   50%;
-  height:   256px;
-  border:   2px solid black;
-}
-
-.AStartupToolkitBMCBottomColumn ul li {
-  display: block;
-}
-
-.AStartupToolkitBMCBottomHalf {
-  display: block;
+.AStartupBMCBottomColumn {
+  display: inline;
   width:   50%;
   border:  2px;
   margin:  1em;
   padding: 1em;
-  border: 3px solid yellow; 
+  border:  3px solid yellow; 
 }
 
-.AStartupToolkitBMCBottomHalf ul li {
+.AStartupBMCBottomColumn ul li {
   display: block;
 }
 
-.AStartupToolkitList {
+.AStartupList {
   display: block;
 }
 
-.BRClearBoth {
+.AStartupClearBoth {
   clear: both;
+}
+
+.AStartupCentered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
