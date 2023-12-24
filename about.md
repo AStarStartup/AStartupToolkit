@@ -15,4 +15,4 @@ Here are some more useful open-source projects you can download, use, and contri
 * [AStartup Toolkit](https://github.com/AStarStartup/AStartupToolkit) - The Astartup Mission Control Center stream and project manager browser extension and Simple Startup Syndication specification.
 * [Simple Startup Syndication Specification](https://github.com/AStarStartup/SimpleStartupSyndicationSpecification) - The Simple Startup Syndication Specification; it's like RSS for startups.
 
-{% comment %}Copyright ©2022 [AStartup](https://astartup.net)™; all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>. {% endcomment %}
+{% comment %}Copyright [AStartup](https://astartup.net)™; all rights reserved, public display prohibited, unauthorized use prohibited, contains trade secrets and other confidential materials, licensed under the Kabuki Strong Source-closed License that YOU MUST CONSENT TO at <https://github.com/AStarStartup/AStartupToolkit>. {% endcomment %}
