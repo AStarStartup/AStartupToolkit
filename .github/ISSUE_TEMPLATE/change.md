@@ -10,4 +10,4 @@ assignees: 'CookingWithCale'
 
 ## License
 
-Copyright 2023 [AStartup](https://astartup.net); all rights reserved.
+Copyright [AStartup](https://astartup.net); all rights reserved.
